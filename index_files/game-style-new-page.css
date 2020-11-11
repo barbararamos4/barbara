@@ -1,0 +1,152 @@
+html,
+body {
+	background-color: #000 !important;
+}
+
+#backgroundproduct {
+	background: url(https://www.winnerwinner.net/wp-content/uploads/2018/07/ImmortalWinners_1.jpg);
+	top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+	right: 0;
+    position: fixed;
+    background-color: #000;
+}
+
+
+#spin-to-win-container {
+    width: 950px;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 35px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -200px auto;
+}
+
+#spin-to-win-container-2 {
+  width: 950px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -200px auto;
+}
+
+.curved-arrow {
+	display: none;
+	position: absolute;
+    z-index: 2;
+    top: 138px;
+    right: 50px;
+    width: 300px;
+}
+
+.empty-container {
+	height: 83px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #spin-to-win-container {
+    width: 120%;
+    left: -10%;
+    padding-top: 80px;
+  }
+
+  #spin-to-win-container-2 {
+    width: 120%;
+    left: -10%;
+    padding-top: 80px;
+  }
+  
+  .i-img {
+    position: absolute;
+    left: -90px;
+    top: 0;
+    width: 5%;
+  }
+	
+	.curved-arrow {
+		top: 220px;
+		right: 0;
+		left: auto;
+		width: 130px;
+	}
+	
+	.empty-container {
+		height: 60px;
+	}
+	
+	.tve_image.wp-image-53 {
+		width: 200px !important;
+		float: right;
+		margin-right: 3em;
+		margin-top: 2em;
+	}
+}
+
+
+@media only screen and (min-width: 601px) {
+    .tve_image.wp-image-53 {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		top: 120px;
+		right: -110px;
+	}
+}
+
+
+@media all and (max-width: 999px) and (min-width: 601px) {
+  #spin-to-win-container {
+    width: 800px;
+    top: 125px;
+  }
+	
+	.i-img {
+		max-height: 800px;
+		left: -100px;
+	}
+}
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+    

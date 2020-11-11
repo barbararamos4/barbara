@@ -1,0 +1,408 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+	word-wrap: break-word;
+	box-sizing: border-box;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header h1 {
+    background: #171c1f;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 6px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inner_container {
+    max-width: 1370px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    height: 1050px;
+}
+
+.main_container {
+    background: url('https://www.winnerwinner.net/spinner-resources/images/WinnerWinner_Background.jpg') 0 0 / cover no-repeat;
+    max-height: 1000px;
+    height: 100%;
+}
+
+.spin--logo img {
+    width: 33%;
+	margin: 0 auto;
+}
+
+.img--avatar {
+    position: relative;
+}
+
+.i-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+	max-height: 920px;
+}
+
+.i-arrow {
+    position: absolute;
+    right: 168px;
+    top: 0;
+    z-index: 1;
+}
+
+.side--box {
+    position: relative;
+}
+
+
+.sm--box {
+    position: relative;
+}
+
+.sm--box::before {
+    content: url('https://www.winnerwinner.net/spinner-resources/images/buttons_blackjack.png');
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
+}
+
+.sm--box::after {
+    content: url('https://www.winnerwinner.net/spinner-resources/images/buttons_roulette.png');
+    position: absolute;
+    right: 125px;
+    bottom: 50px;
+}
+
+.sm--box2 {
+    position: relative;
+}
+
+.sm--box2::before {
+    content: url('https://www.winnerwinner.net/spinner-resources/images/buttons_livedealers.png');
+    position: absolute;
+    left: 300px;
+    bottom: -75px;
+}
+
+.sm--box2::after {
+    content: url('https://www.winnerwinner.net/spinner-resources/images/buttons_slots.png');
+    position: absolute;
+    right: 300px;
+    bottom: -75px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+footer h3 {
+    color: #fff;
+    background: #171c1f;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+}
+
+.mobile-only {
+	display: none;
+}
+
+.desktop-only {
+	display: block;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+   /* MOBILE */
+@media(max-width: 500px) {
+    .i-arrow {
+        position: absolute;
+        right: 1px;
+        top: 18px;
+        width: 37%;
+    }
+    
+	.i-arrow {
+		-moz-transform: scaleX(-1) rotate(-105deg);
+		-o-transform: scaleX(-1) rotate(-105deg);
+		-webkit-transform: scaleX(-1) rotate(-105deg);
+		transform: scaleX(-1) rotate(-105deg);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+    }
+}
+
+@media(max-width: 600px) {
+    .spin--logo img {
+        width: 72%;
+		margin: 0 auto;
+    }
+	
+	.mobile-only {
+		display: block;
+	}
+	
+	.desktop-only {
+		display: none;
+	}
+
+    .i-arrow {
+		position: absolute;
+		right: -30px;
+		top: 20px;
+		width: 34%;
+    }
+
+    .main_container {
+        background: url(https://www.winnerwinner.net/spinner-resources/images/WinnerWinner_Background.jpg) center center / cover no-repeat;
+        max-height: 1197px;
+        height: 100%;
+		overflow: hidden;
+    }
+
+    .sm--box::after {
+        display: none;
+    }
+	
+	 .sm--box2::before {
+		left: 35%;
+		bottom: -210px;
+		content: ' ';
+		background-image: url(https://www.winnerwinner.net/spinner-resources/images/buttons_livedealers.png);
+		background-size: contain;
+		height: 110px;
+		width: 110px;
+    }
+
+    .sm--box2::after {
+        right: 0;
+		bottom: -180px;
+		content: ' ';
+		background-image: url(https://www.winnerwinner.net/spinner-resources/images/buttons_slots.png);
+		background-size: contain;
+		height: 110px;
+		width: 110px;
+    }
+
+    .sm--box::before {
+        left: 0;
+        bottom: -200px;
+		content: '';
+		background-image: url(https://www.winnerwinner.net/spinner-resources/images/buttons_blackjack.png);
+		background-size: contain;
+		height: 110px;
+		width: 110px;
+    }
+
+    .inner_container {
+        height: 565px;
+    }
+}
+
+    /* DESKTOP */
+@media(min-width: 1000px) {
+    .side--box::before {
+        content: url('https://www.winnerwinner.net/spinner-resources/images/sideboxes.png');
+        position: absolute;
+        right: 0;
+        top: 95px;
+    }
+	
+	.side--box.box-alternate::before {
+        content: url('https://www.winnerwinner.net/spinner-resources/images/sideboxes-150.png');
+    }
+	
+}
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
